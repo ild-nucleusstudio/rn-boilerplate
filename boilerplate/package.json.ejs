@@ -170,6 +170,7 @@
     "plugins": [
       "@typescript-eslint",
       "react",
+      "react-hooks",
       "react-native"
     ],
     "settings": {
@@ -208,7 +209,19 @@
       "@typescript-eslint/no-explicit-any": 0,
       "@typescript-eslint/no-object-literal-type-assertion": 0,
       "@typescript-eslint/no-empty-interface": 0,
-      "@typescript-eslint/no-var-requires": 0
+      "@typescript-eslint/no-var-requires": 0,
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn"
     }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn format"
+    }
+  },
+  "lint-staged": {
+    "*{js,jsx,ts,tsx}": "yarn lint"
   }
 }
