@@ -1,10 +1,10 @@
 {
-  "name": "ignite-bowser",
-  "description": "Infinite Red's hot boilerplate for React Native.",
+  "name": "@nucleusstudio/rn-boilerplate",
+  "description": "The customize boilerplate for React Native forked from Infinite Red",
   "license": "MIT",
-  "repository": "infinitered/ignite-bowser",
-  "homepage": "https://github.com/infinitered/ignite-bowser",
-  "version": "4.13.0",
+  "repository": "ild-nucleusstudio/rn-boilerplate",
+  "homepage": "https://github.com/ild-nucleusstudio/rn-boilerplate",
+  "version": "0.0.1",
   "files": [
     "boilerplate.js",
     "boilerplate",
@@ -14,9 +14,9 @@
     "readme.md"
   ],
   "author": {
-    "name": "Infinite Red",
-    "email": "npm@infinite.red",
-    "url": "https://github.com/infinitered/ignite-bowser"
+    "name": "I Le",
+    "email": "ild@nucleusstudio.io",
+    "url": "https://github.com/ild-nucleusstudio/rn-boilerplate"
   },
   "scripts": {
     "format": "npm-run-all format:*",

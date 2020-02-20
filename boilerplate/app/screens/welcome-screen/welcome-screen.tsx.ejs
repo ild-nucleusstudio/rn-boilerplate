@@ -1,6 +1,7 @@
 import * as React from "react"
 import { View, Image, ViewStyle, TextStyle, ImageStyle, SafeAreaView } from "react-native"
-import { NavigationInjectedProps } from "react-navigation"
+import { ParamListBase } from "@react-navigation/native"
+import { NativeStackNavigationProp } from "@react-navigation/native-stack"
 import { Button, Header, Screen, Text, Wallpaper } from "../../components"
 import { color, spacing } from "../../theme"
 const bowserLogo = require("./bowser.png")
@@ -74,7 +75,9 @@ const FOOTER_CONTENT: ViewStyle = {
   paddingHorizontal: spacing[4],
 }
 
-export interface WelcomeScreenProps extends NavigationInjectedProps<{}> {}
+export interface WelcomeScreenProps {
+  navigation: NativeStackNavigationProp<ParamListBase>
+}
 
 export const WelcomeScreen: React.FunctionComponent<WelcomeScreenProps> = props => {
   const nextScreen = React.useMemo(() => () => props.navigation.navigate("demo"), [
@@ -89,7 +92,6 @@ export const WelcomeScreen: React.FunctionComponent<WelcomeScreenProps> = props 
 <% } -%>
       <Wallpaper />
       <Screen style={CONTAINER} preset="scroll" backgroundColor={color.transparent}>
-        <Header headerTx="welcomeScreen.poweredBy" style={HEADER} titleStyle={HEADER_TITLE} />
         <Text style={TITLE_WRAPPER}>
           <Text style={TITLE} text="Your new app, " />
           <Text style={ALMOST} text="almost" />
