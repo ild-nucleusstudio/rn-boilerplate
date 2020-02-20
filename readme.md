@@ -1,19 +1,15 @@
-<p align="center"><img src="http://ir_public.s3.amazonaws.com/projects/ignite/ignite-bowser-launch-screen.png" alt="logo" width="414px"></p>
+# React Native boilerplate
 
-# Ignite Bowser - the hottest React Native boilerplate
+<a href="https://badge.fury.io/js/rn-boilerplate" target="_blank"><img src="https://badge.fury.io/js/rn-boilerplate.svg" alt="npm version" height="20"></a>
 
-<a href="https://badge.fury.io/js/ignite-bowser" target="_blank"><img src="https://badge.fury.io/js/ignite-bowser.svg" alt="npm version" height="20"></a>
-
-## Infinite Red's latest and greatest React Native boilerplate
+## React Native boilerplate
 
 Once you've installed [React Native](https://shift.infinite.red/painless-react-native-setup-for-mac-windows-linux-956c23d2abf9) and the [Ignite CLI](https://github.com/infinitered/ignite), you can get started with this boilerplate.
-
-This is the boilerplate that the [Infinite Red](https://infinite.red) team recommends and uses on a day-to-day basis. Prior art includes [Ignite Andross](https://github.com/infinitered/ignite-andross).
 
 Includes:
 
 - React Native
-- React Navigation
+- React Navigation V5
 - MobX State Tree [(Why MST?)](#About-The-Stack)
 - TypeScript
 - Reactotron (requires 2.x)
@@ -73,7 +69,7 @@ ignite generate component awesome-component
 
 - Creates the component/function
 - Creates a style file
-- Creates a storybook test  
+- Creates a storybook test
 - Will make the required additions to configuration files.
 
 You can also bypass the choice by providing which component type you want to create:
@@ -88,7 +84,7 @@ Or
 ignite generate component awesome-component --stateless-function
 ```
 
-### Screen generator 
+### Screen generator
 
 Generates a "hooks enabled" screen.
 
@@ -109,7 +105,7 @@ ignite generate navigator awesome-navigator
 
 - Creates the navigator
 - Will make the required additions to configuration files.
-  
+
 ### Model generator
 
 Creates a Mobx-State-Tree model.
@@ -127,7 +123,7 @@ ignite generate model awesome-model
 The built in generators aren't enough? Fret not, you can create your own generators that suit your project/company. These generators can live with the default ignite-bowser generators.
 
 Please refer to the [documentation on how to create your own generators.](https://github.com/infinitered/ignite/blob/master/docs/advanced-guides/creating-generators.md)
- 
+
 ## Explanation of folder structure
 
 The Ignite Bowser boilerplate project's structure will look similar to this:
@@ -296,12 +292,6 @@ To keep your Ignite Bowser based app updated:
 
 - [ignite-bowser-diff-purge](https://github.com/nirre7/ignite-bowser-diff-purge) To help you see the diffs between versions
 
-## TypeScript
-
-In addition to `redux` --> `mobx-state-tree`, we've also transitioned to using `TypeScript` vs plain `JavaScript`. We find that TypeScript streamlines the developer experience by catching errors _before_ you hit refresh on that simulator, and prevents costly bugs by enforcing type safety.
-
-In Bowser, TypeScript is fully set up, so if you know TS, all you need to do is start coding!
-
 ### Resources
 
 If you are new to TypeScript, here are some of our favorite resources:
@@ -311,15 +301,3 @@ If you are new to TypeScript, here are some of our favorite resources:
 - [Execute Program -- TypeScript course](https://www.executeprogram.com/course/typescript) -- free course by Gary Bernhardt
 - [TypeScript and VSCode](https://code.visualstudio.com/docs/typescript/typescript-tutorial) for awesome developer tools
 - [Official Docs](https://www.typescriptlang.org/docs/home.html)
-
-## Previous Boilerplates
-
-- [2017 aka Andross](https://github.com/infinitered/ignite-andross)
-- [2016 aka Ignite 1.0](https://github.com/infinitered/ignite-ir-boilerplate-2016)
-
-## Premium Support
-
-[Ignite CLI](https://infinite.red/ignite), [Ignite Andross](https://github.com/infinitered/ignite-andross), and [Ignite Bowser](https://github.com/infinitered/ignite-bowser), as open source projects, are free to use and always will be. [Infinite Red](https://infinite.red/) offers premium Ignite CLI support and general mobile app design/development services. Email us at [hello@infinite.red](mailto:hello@infinite.red) to get in touch with us for more details.
-
-## Contribute
-#### [Contribute to Ignite Bowser](https://github.com/infinitered/ignite-bowser/blob/master/.github/CONTRIBUTING.md) - Getting up and running for your first pull request
