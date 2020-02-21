@@ -13,7 +13,7 @@ Currently includes:
 The boilerplate project's structure will look similar to this:
 
 ```
-ignite-project
+<%= props.name %>
 ├── app
 │   ├── components
 │   ├── i18n
